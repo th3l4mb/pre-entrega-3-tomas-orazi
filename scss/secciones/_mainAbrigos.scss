@@ -1,0 +1,116 @@
+.abrigos {
+  background: rgb(118, 3, 171);
+  background: linear-gradient(
+    138deg,
+    rgba(118, 3, 171, 1) 30%,
+    rgba(0, 0, 0, 1) 59%
+  );
+
+  &__shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ab1 ab2 ab3 ab4"
+      "ab5 ab6 ab7 ab8";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 60px;
+    img {
+      width: 300px;
+      height: 300px;
+    }
+    p{
+        color: violet;
+        text-align: center;
+        font-family: $typoLogo;
+        font-size: 30px;
+    }
+  }
+
+  .ab1 {
+    grid-area: ab1;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab2 {
+    grid-area: ab2;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab3 {
+    grid-area: ab3;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab4 {
+    grid-area: ab4;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab5 {
+    grid-area: ab5;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab6 {
+    grid-area: ab6;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab7 {
+    grid-area: ab7;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  .ab8 {
+    grid-area: ab8;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%;
+  }
+
+  &__title {
+    color: violet;
+    text-align: center;
+    padding: 60px;
+    h2{
+        padding-bottom: 30px;
+        font-size: 100px; 
+        font-family: $typoLogo;
+    }
+    p{
+        font-size: 50px;
+        font-family: $typoLogo;
+       
+    }
+  }
+}

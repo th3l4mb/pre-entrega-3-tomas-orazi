@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 .main {
-  background: black;
-  background: linear-gradient(138deg, black 27%, #110e0e 40%, black 65%, #dd600c 75%, #dd600c 100%);
+  background: #7603ab;
+  background: linear-gradient(138deg, #7603ab 30%, black 59%);
   color: azure; }
   .main__logo {
     text-align: center;
@@ -16,12 +17,14 @@
     .main__logo h2 {
       padding-bottom: 30px;
       font-size: 40px;
-      color: violet; }
+      color: violet;
+      font-family: "Bebas Neue", cursive; }
     .main__logo p {
       font-size: 20px;
       color: violet;
       margin-left: 200px;
-      margin-right: 200px; }
+      margin-right: 200px;
+      font-family: "Bebas Neue", cursive; }
   .main__banner {
     color: violet;
     text-align: center; }
@@ -31,7 +34,8 @@
     .main__banner p {
       padding: 20px;
       margin-left: 400px;
-      margin-right: 400px; }
+      margin-right: 400px;
+      font-family: "Bebas Neue", cursive; }
   .main__img {
     width: 40px;
     height: 150px; }
@@ -82,8 +86,12 @@
     text-align: center; }
   .main a {
     text-decoration: none;
-    color: violet; }
+    color: violet;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px; }
   .main__aboutus {
+    font-family: "Bebas Neue", cursive;
+    color: violet;
     padding: 40px;
     margin-left: 300px;
     margin-right: 300px; }
@@ -93,6 +101,8 @@
       font-size: 80px;
       text-decoration: underline 5px; }
   .main__faqs {
+    font-family: "Bebas Neue", cursive;
+    color: violet;
     padding: 40px;
     margin-left: 300px;
     margin-right: 300px; }
@@ -102,6 +112,8 @@
       font-size: 80px;
       text-decoration: underline 5px; }
   .main__store {
+    font-family: "Bebas Neue", cursive;
+    color: violet;
     padding: 40px;
     margin-left: 400px;
     margin-right: 400px; }
@@ -113,7 +125,8 @@
     .main__store p {
       font-size: 50px;
       text-decoration: underline;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      font-family: "Bebas Neue", cursive; }
   .main__sucursalesul {
     display: flex;
     align-items: center;
@@ -124,8 +137,8 @@
       font-size: 30px; }
 
 .header {
-  background: black;
-  background: linear-gradient(138deg, black 27%, #110e0e 40%, black 65%, #dd600c 75%, #dd600c 100%); }
+  background: #7603ab;
+  background: linear-gradient(184deg, #7603ab 30%, black 59%); }
   .header__logo {
     font-family: "Anton", "Kanit", "Roboto", sans-serif;
     text-align: center;
@@ -133,11 +146,15 @@
     text-decoration: none;
     padding-bottom: 60px; }
     .header__logo h1 {
-      font-size: 75px; }
+      font-size: 75px;
+      font-family: "Bebas Neue", cursive; }
     .header__logo h1:hover {
       color: aqua;
       transition: 0.5s;
       text-decoration: line-through; }
+    .header__logo a {
+      text-decoration: none;
+      color: violet; }
   .header__ul {
     display: flex;
     justify-content: space-evenly;
@@ -153,12 +170,15 @@
       transition: 0.5s; }
     .header__ul a {
       text-decoration: none;
-      color: violet; }
+      color: violet;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
 
 .footer {
-  background-color: #720660;
-  color: #074e8d;
-  border: red 5px solid;
+  background: #7603ab;
+  background: linear-gradient(138deg, #7603ab 30%, black 59%);
+  color: violet;
+  font-family: "Bebas Neue", cursive;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -170,18 +190,17 @@
     .footer__redes img {
       width: 45px;
       height: 45px; }
-  .footer__newsletter p {
-    color: violet; }
   .footer__ul li {
     list-style: none; }
   .footer__ul a {
     text-decoration: none;
-    color: rgba(238, 130, 238, 0.524); }
+    color: rgba(238, 130, 238, 0.524);
+    font-family: "Bebas Neue", cursive; }
 
 .sneakers {
-  background-color: black; }
+  background: #7603ab;
+  background: linear-gradient(138deg, #7603ab 30%, black 59%); }
   .sneakers__titulo {
-    border: 5px solid yellow;
     color: violet;
     text-align: center;
     margin-left: 250px;
@@ -189,7 +208,11 @@
     padding: 40px; }
     .sneakers__titulo h2 {
       padding: 20px;
-      font-size: 75px; }
+      font-size: 75px;
+      font-family: "Bebas Neue", cursive; }
+    .sneakers__titulo p {
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
   .sneakers__tienda {
     display: grid;
     grid-auto-columns: 1fr;
@@ -202,88 +225,57 @@
     justify-content: center; }
     .sneakers__tienda .zap1 {
       grid-area: zap1;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap2 {
       grid-area: zap2;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap3 {
       grid-area: zap3;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap4 {
       grid-area: zap4;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap5 {
       grid-area: zap5;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap6 {
       grid-area: zap6;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap7 {
       grid-area: zap7;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap8 {
       grid-area: zap8;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap9 {
       grid-area: zap9;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap10 {
       grid-area: zap10;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap11 {
       grid-area: zap11;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap12 {
       grid-area: zap12;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap13 {
       grid-area: zap13;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap14 {
       grid-area: zap14;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap15 {
       grid-area: zap15;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda .zap16 {
       grid-area: zap16;
-      border: 5px solid gray;
-      border-radius: 10%;
       padding: 50px; }
     .sneakers__tienda img {
       width: 350px;
       height: 350px; }
     .sneakers__tienda p {
+      padding-top: 20px;
       text-align: center; }
     .sneakers__tienda a {
       text-decoration: none;
@@ -302,3 +294,88 @@
     .sneakers__baner img {
       height: 350px;
       width: 650px; }
+
+.abrigos {
+  background: #7603ab;
+  background: linear-gradient(138deg, #7603ab 30%, black 59%); }
+  .abrigos__shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "ab1 ab2 ab3 ab4" "ab5 ab6 ab7 ab8";
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 60px; }
+    .abrigos__shop img {
+      width: 300px;
+      height: 300px; }
+    .abrigos__shop p {
+      color: violet;
+      text-align: center;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
+  .abrigos .ab1 {
+    grid-area: ab1;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab2 {
+    grid-area: ab2;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab3 {
+    grid-area: ab3;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab4 {
+    grid-area: ab4;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab5 {
+    grid-area: ab5;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab6 {
+    grid-area: ab6;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab7 {
+    grid-area: ab7;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos .ab8 {
+    grid-area: ab8;
+    padding: 40px;
+    padding-bottom: 100px;
+    border: solid 5px violet;
+    border-radius: 10%; }
+  .abrigos__title {
+    color: violet;
+    text-align: center;
+    padding: 60px; }
+    .abrigos__title h2 {
+      padding-bottom: 30px;
+      font-size: 100px;
+      font-family: "Bebas Neue", cursive; }
+    .abrigos__title p {
+      font-size: 50px;
+      font-family: "Bebas Neue", cursive; }
