@@ -18,15 +18,15 @@
       font-family: $typoLogo;
     }
   }
-  background: rgb(118,3,171);
-  background: linear-gradient(138deg, rgba(118,3,171,1) 30%, rgba(0,0,0,1) 59%);
+  background: rgb(0,0,0);
+  background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
   color: azure;
   &__banner {
     color: violet;
     text-align: center;
     img {
-      width: 100px;
-      height: 100px;
+      width: 800px;
+      height: 300px;
     }
     p {
       padding: 20px;
@@ -35,10 +35,7 @@
       font-family: $typoLogo;
     }
   }
-  &__img {
-    width: 40px;
-    height: 150px;
-  }
+
   &__cards {
     align-items: center;
     justify-items: center;
@@ -55,6 +52,19 @@
       "img1 img2 img3"
       "img4 img5 img6"
       "img7 img8 img9";
+      img {
+    width: 450px;
+    height: 350px;
+  }
+  p {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: violet;
+    font-family: $typoLogo;
+    font-size: 30px;
+  }
   }
 
   .img1 {
@@ -101,19 +111,7 @@
     grid-area: img9;
     padding: 40px;
   }
-  img {
-    width: 450px;
-    height: 350px;
-  }
-  p {
-    text-align: center;
-  }
-  a {
-    text-decoration: none;
-    color: violet;
-    font-family: $typoLogo;
-    font-size: 30px;
-  }
+  
   &__aboutus {
     font-family: $typoLogo;
     color: violet;

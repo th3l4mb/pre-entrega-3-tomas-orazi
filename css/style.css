@@ -6,8 +6,8 @@
   box-sizing: border-box; }
 
 .main {
-  background: #7603ab;
-  background: linear-gradient(138deg, #7603ab 30%, black 59%);
+  background: black;
+  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%);
   color: azure; }
   .main__logo {
     text-align: center;
@@ -29,16 +29,13 @@
     color: violet;
     text-align: center; }
     .main__banner img {
-      width: 100px;
-      height: 100px; }
+      width: 800px;
+      height: 300px; }
     .main__banner p {
       padding: 20px;
       margin-left: 400px;
       margin-right: 400px;
       font-family: "Bebas Neue", cursive; }
-  .main__img {
-    width: 40px;
-    height: 150px; }
   .main__cards {
     align-items: center;
     justify-items: center;
@@ -52,6 +49,16 @@
     gap: 8px 13px;
     grid-auto-flow: row;
     grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9"; }
+    .main__cards img {
+      width: 450px;
+      height: 350px; }
+    .main__cards p {
+      text-align: center; }
+    .main__cards a {
+      text-decoration: none;
+      color: violet;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
   .main .img1 {
     grid-area: img1;
     padding: 40px; }
@@ -79,16 +86,6 @@
   .main .img9 {
     grid-area: img9;
     padding: 40px; }
-  .main img {
-    width: 450px;
-    height: 350px; }
-  .main p {
-    text-align: center; }
-  .main a {
-    text-decoration: none;
-    color: violet;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px; }
   .main__aboutus {
     font-family: "Bebas Neue", cursive;
     color: violet;
@@ -198,8 +195,8 @@
     font-family: "Bebas Neue", cursive; }
 
 .sneakers {
-  background: #7603ab;
-  background: linear-gradient(138deg, #7603ab 30%, black 59%); }
+  background: black;
+  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
   .sneakers__titulo {
     color: violet;
     text-align: center;
@@ -296,8 +293,8 @@
       width: 650px; }
 
 .abrigos {
-  background: #7603ab;
-  background: linear-gradient(138deg, #7603ab 30%, black 59%); }
+  background: black;
+  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
   .abrigos__shop {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -379,3 +376,131 @@
     .abrigos__title p {
       font-size: 50px;
       font-family: "Bebas Neue", cursive; }
+
+.remeras {
+  background: black;
+  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
+  .remeras__titulo {
+    color: #b005b0;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-top: 80px;
+    padding-bottom: 100px; }
+    .remeras__titulo h2 {
+      font-size: 60px;
+      text-decoration: underline; }
+    .remeras__titulo p {
+      font-size: 30px; }
+  .remeras__banner {
+    text-align: center;
+    padding-bottom: 50px; }
+    .remeras__banner img {
+      width: 1000px;
+      height: 350px; }
+    .remeras__banner p {
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px; }
+  .remeras__tienda {
+    color: violet;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "rem1 rem2 rem3" "rem4 rem5 rem6" "rem7 rem8 rem9";
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center; }
+    .remeras__tienda img {
+      width: 350px;
+      height: 350px; }
+    .remeras__tienda p {
+      text-align: center;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px;
+      text-decoration: underline; }
+  .remeras .rem1 {
+    grid-area: rem1;
+    padding: 70px; }
+  .remeras .rem2 {
+    grid-area: rem2; }
+  .remeras .rem3 {
+    grid-area: rem3; }
+  .remeras .rem4 {
+    grid-area: rem4; }
+  .remeras .rem5 {
+    grid-area: rem5; }
+  .remeras .rem6 {
+    grid-area: rem6; }
+  .remeras .rem7 {
+    grid-area: rem7; }
+  .remeras .rem8 {
+    grid-area: rem8; }
+  .remeras .rem9 {
+    grid-area: rem9; }
+
+.camperas {
+  background: black;
+  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
+  .camperas__tienda {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "cam1 cam2 cam3" "cam4 cam5 cam6" "cam7 cam8 cam9";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; }
+    .camperas__tienda img {
+      width: 350px;
+      height: 350px; }
+    .camperas__tienda p {
+      text-align: center;
+      color: violet;
+      font-family: "Bebas Neue", cursive;
+      font-size: 20px; }
+  .camperas .cam1 {
+    grid-area: cam1;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam2 {
+    grid-area: cam2;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam3 {
+    grid-area: cam3;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam4 {
+    grid-area: cam4;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam5 {
+    grid-area: cam5;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam6 {
+    grid-area: cam6;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam7 {
+    grid-area: cam7;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam8 {
+    grid-area: cam8;
+    padding-top: 50px;
+    padding-bottom: 100px; }
+  .camperas .cam9 {
+    grid-area: cam9;
+    padding-top: 50px;
+    padding-bottom: 100px; }

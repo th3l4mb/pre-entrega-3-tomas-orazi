@@ -1,0 +1,69 @@
+.camperas {
+    background: rgb(0,0,0);
+background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
+&__tienda{
+  display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "cam1 cam2 cam3"
+          "cam4 cam5 cam6"
+          "cam7 cam8 cam9";
+          justify-items: center;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          img{
+        width: 350px;
+        height: 350px;
+    
+          }
+          p{
+            text-align: center;
+            color: violet;
+            font-family: $typoLogo;
+            font-size: 20px;
+          }
+      }
+      
+      .cam1 { grid-area: cam1;
+        padding-top: 50px;
+    padding-bottom: 100px; }
+      
+      .cam2 { grid-area: cam2; 
+        padding-top: 50px;
+        padding-bottom: 100px;}
+      
+      .cam3 { grid-area: cam3; 
+        padding-top: 50px;
+        padding-bottom: 100px;}
+      
+      .cam4 { grid-area: cam4;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+      .cam5 { grid-area: cam5;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+      .cam6 { grid-area: cam6;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+      .cam7 { grid-area: cam7;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+      .cam8 { grid-area: cam8;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+      .cam9 { grid-area: cam9;
+        padding-top: 50px;
+        padding-bottom: 100px; }
+      
+}

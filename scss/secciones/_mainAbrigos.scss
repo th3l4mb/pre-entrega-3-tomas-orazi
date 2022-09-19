@@ -1,10 +1,6 @@
 .abrigos {
-  background: rgb(118, 3, 171);
-  background: linear-gradient(
-    138deg,
-    rgba(118, 3, 171, 1) 30%,
-    rgba(0, 0, 0, 1) 59%
-  );
+    background: rgb(0,0,0);
+    background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
 
   &__shop {
     display: grid;
