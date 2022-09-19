@@ -1,0 +1,52 @@
+.header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    138deg,
+    rgba(0, 0, 0, 1) 27%,
+    rgba(17, 14, 14, 1) 40%,
+    rgba(0, 0, 0, 1) 65%,
+    rgba(221, 96, 12, 1) 75%,
+    rgba(221, 96, 12, 1) 100%
+  );
+
+
+  &__logo {
+    font-family: $typoPrincipal;
+    text-align: center;
+    color: orange;
+    text-decoration: none;
+    padding-bottom: 60px;
+    h1 {
+      font-size: 75px;
+    }
+    h1:hover {
+      color: aqua;
+      transition: 0.5s;
+      text-decoration: line-through;
+    }
+  }
+  &__ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    // padding-left: 150px;
+    // padding-right: 150px;
+margin-left:150px;
+margin-right: 150px;
+
+    li {
+      list-style: none;
+      text-decoration: none;
+      color: orange;
+    }
+    li:hover {
+      text-decoration: underline;
+      transition: 0.5s;
+    }
+
+    a {
+      text-decoration: none;
+      color: violet;
+    }
+  }
+}

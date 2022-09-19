@@ -1,0 +1,9 @@
+.footer {
+    background-color: black;
+    color: aliceblue;
+    border:red 5px solid;
+    display: flex;
+    &__redes {
+        display: flex;
+    }
+}
