@@ -1,0 +1,168 @@
+.sneakers {
+  background-color: black;
+  &__titulo {
+    border: 5px solid yellow;
+    color: violet;
+    text-align: center;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 40px;
+    h2 {
+        padding: 20px;
+        font-size: 75px;
+    }
+  }
+&__tienda{
+     display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "zap1 zap2 zap3 zap4"
+    "zap5 zap6 zap7 zap8"
+    "zap9 zap10 zap11 zap12"
+    "zap13 zap14 zap15 zap16";
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+  .zap1 {
+    grid-area: zap1;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap2 {
+    grid-area: zap2;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap3 {
+    grid-area: zap3;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap4 {
+    grid-area: zap4;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap5 {
+    grid-area: zap5;
+    border: 5px solid gray;
+    border-radius: 10%; 
+     padding: 50px;
+  }
+
+  .zap6 {
+    grid-area: zap6;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap7 {
+    grid-area: zap7;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap8 {
+    grid-area: zap8;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap9 {
+    grid-area: zap9;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap10 {
+    grid-area: zap10;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap11 {
+    grid-area: zap11;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+
+  .zap12 {
+    grid-area: zap12;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+  .zap13 {
+    grid-area: zap13;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+  .zap14 {
+    grid-area: zap14;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+  .zap15 {
+    grid-area: zap15;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+  .zap16 {
+    grid-area: zap16;
+    border: 5px solid gray;
+    border-radius: 10%;
+    padding: 50px;
+  }
+  img {
+    width: 350px;
+    height: 350px;
+  }
+  p {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    color: violet;
+
+  }
+  a:hover {
+    text-decoration: underline;
+    transition: 0.5s;
+  }
+}
+ 
+  &__baner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 50px;
+    img {
+        height: 350px;
+        width: 650px;
+    }
+  }
+}
