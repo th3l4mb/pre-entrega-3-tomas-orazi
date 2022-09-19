@@ -2,9 +2,18 @@
   &__logo {
     text-align: center;
     padding: 50px;
-    h2{
-padding-bottom: 30px;
-
+    margin-left: 300px;
+    margin-right: 300px;
+    h2 {
+      padding-bottom: 30px;
+      font-size: 40px;
+      color: violet;
+    }
+    p {
+      font-size: 20px;
+      color: violet;
+      margin-left: 200px;
+      margin-right: 200px;
     }
   }
   background: rgb(0, 0, 0);
@@ -18,13 +27,17 @@ padding-bottom: 30px;
   );
   color: azure;
   &__banner {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-   
-
+    color: violet;
+    text-align: center;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    p {
+      padding: 20px;
+      margin-left: 400px;
+      margin-right: 400px;
+    }
   }
   &__img {
     width: 40px;
@@ -50,7 +63,7 @@ padding-bottom: 30px;
 
   .img1 {
     grid-area: img1;
-   padding: 40px;
+    padding: 40px;
   }
 
   .img2 {
@@ -95,7 +108,6 @@ padding-bottom: 30px;
   img {
     width: 450px;
     height: 350px;
-   
   }
   p {
     text-align: center;
@@ -104,32 +116,32 @@ padding-bottom: 30px;
     text-decoration: none;
     color: violet;
   }
-  &__aboutus{
-    h3{
+  &__aboutus {
+    h3 {
       text-align: center;
       padding-bottom: 20px;
       font-size: 80px;
       text-decoration: underline 5px;
     }
-border: 5px solid red;
-padding: 40px;
-margin: 100px;
 
+    padding: 40px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
-  &__faqs{
-    h3{
+  &__faqs {
+    h3 {
       text-align: center;
       padding-bottom: 20px;
       font-size: 80px;
       text-decoration: underline 5px;
     }
-    border: 5px solid orangered;
+
     padding: 40px;
-    margin: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
   }
   &__store {
-    
-    h3{
+    h3 {
       text-align: center;
       padding-bottom: 20px;
       font-size: 80px;
@@ -140,11 +152,10 @@ margin: 100px;
       text-decoration: underline;
       padding-bottom: 30px;
     }
-    border: 5px solid bisque;
+
     padding: 40px;
     margin-left: 400px;
     margin-right: 400px;
-    
   }
 
   &__sucursalesul {
