@@ -1,6 +1,36 @@
 .camperas {
     background: rgb(0,0,0);
 background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
+&__titulo{
+    color: violet;
+    text-align: center;
+    font-family: $typoLogo;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left:300px ;
+    margin-right:300px ;
+    h2{
+font-size: 75px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
+&__banner {
+    text-align: center;
+    padding-bottom: 80px;
+    color: violet;
+    font-family: $typoLogo;
+    font-size: 30px;
+    img{
+        width: 1000px;
+        height: 350px;
+    }
+    p{
+        margin-left:400px ;
+        margin-right:400px ;
+    }
+}
 &__tienda{
   display: grid;
         grid-template-columns: repeat(3, 1fr);
