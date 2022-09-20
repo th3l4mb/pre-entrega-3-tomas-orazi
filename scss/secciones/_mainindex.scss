@@ -12,7 +12,7 @@
     }
     p {
       font-size: 20px;
-      color: violet;
+      color:$colorletras;
       margin-left: 200px;
       margin-right: 200px;
       font-family: $typoLogo;
@@ -22,7 +22,7 @@
   background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
   color: azure;
   &__banner {
-    color: violet;
+    color:$colorletras;
     text-align: center;
     img {
       width: 800px;
@@ -61,7 +61,7 @@
   }
   a {
     text-decoration: none;
-    color: violet;
+    color:$colorletras;
     font-family: $typoLogo;
     font-size: 30px;
   }
@@ -114,7 +114,7 @@
   
   &__aboutus {
     font-family: $typoLogo;
-    color: violet;
+    color:$colorletras;
     h3 {
       text-align: center;
       padding-bottom: 20px;
@@ -128,7 +128,7 @@
   }
   &__faqs {
     font-family: $typoLogo;
-    color: violet;
+    color:$colorletras;
     h3 {
       text-align: center;
       padding-bottom: 20px;
@@ -142,7 +142,7 @@
   }
   &__store {
     font-family: $typoLogo;
-    color: violet;
+    color:$colorletras;
     h3 {
       text-align: center;
       padding-bottom: 20px;

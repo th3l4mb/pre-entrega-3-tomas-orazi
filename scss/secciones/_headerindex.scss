@@ -19,7 +19,7 @@
     }
     a{
       text-decoration: none;
-      color: violet;
+      color:$colorletras;
     }
   }
   &__ul {
@@ -43,7 +43,7 @@ margin-right: 150px;
 
     a {
       text-decoration: none;
-      color: violet;
+      color: $colorletras;
       font-family: $typoLogo;
       font-size: 30px;
     }

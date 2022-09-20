@@ -320,51 +320,35 @@
   .abrigos .ab1 {
     grid-area: ab1;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab2 {
     grid-area: ab2;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab3 {
     grid-area: ab3;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab4 {
     grid-area: ab4;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab5 {
     grid-area: ab5;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab6 {
     grid-area: ab6;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab7 {
     grid-area: ab7;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos .ab8 {
     grid-area: ab8;
     padding: 40px;
-    padding-bottom: 100px;
-    border: solid 5px violet;
-    border-radius: 10%; }
+    padding-bottom: 100px; }
   .abrigos__title {
     color: violet;
     text-align: center;

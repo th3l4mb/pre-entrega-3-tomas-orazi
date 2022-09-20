@@ -8,7 +8,7 @@
     rgba(0, 0, 0, 1) 86%
   );
   &__titulo {
-    color: violet;
+    color:$colorletras;
     text-align: center;
     font-family: $typoLogo;
     padding-top: 40px;
@@ -22,7 +22,7 @@
   }
   &__banner {
     text-align: center;
-    color: violet;
+    color:$colorletras;
     font-family: $typoLogo;
     padding-bottom: 100px;
     img {
@@ -56,7 +56,7 @@
     }
     p {
         font-family: $typoLogo;
-        color: violet;
+        color: $colorletras;
         font-size: 30px;
         text-align: center;
     }

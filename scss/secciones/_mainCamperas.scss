@@ -2,7 +2,7 @@
     background: rgb(0,0,0);
 background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
 &__titulo{
-    color: violet;
+    color:$colorletras;
     text-align: center;
     font-family: $typoLogo;
     padding-top: 40px;
@@ -19,7 +19,7 @@ font-size: 75px;
 &__banner {
     text-align: center;
     padding-bottom: 80px;
-    color: violet;
+    color:$colorletras;
     font-family: $typoLogo;
     font-size: 30px;
     img{
@@ -54,7 +54,7 @@ font-size: 75px;
           }
           p{
             text-align: center;
-            color: violet;
+            color:$colorletras;
             font-family: $typoLogo;
             font-size: 20px;
           }
