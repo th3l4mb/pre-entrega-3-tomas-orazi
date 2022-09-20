@@ -1,175 +1,266 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .main {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%);
-  color: azure; }
-  .main__logo {
-    text-align: center;
-    padding: 50px;
-    margin-left: 300px;
-    margin-right: 300px; }
-    .main__logo h2 {
-      padding-bottom: 30px;
-      font-size: 40px;
-      color: violet;
-      font-family: "Bebas Neue", cursive; }
-    .main__logo p {
-      font-size: 20px;
-      color: violet;
-      margin-left: 200px;
-      margin-right: 200px;
-      font-family: "Bebas Neue", cursive; }
-  .main__banner {
-    color: violet;
-    text-align: center; }
-    .main__banner img {
-      width: 800px;
-      height: 300px; }
-    .main__banner p {
-      padding: 20px;
-      margin-left: 400px;
-      margin-right: 400px;
-      font-family: "Bebas Neue", cursive; }
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+  color: azure;
+}
+
+.main__logo {
+  text-align: center;
+  padding: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.main__logo h2 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main__logo p {
+  font-size: 20px;
+  color: violet;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main__banner {
+  color: violet;
+  text-align: center;
+}
+
+.main__banner img {
+  width: 800px;
+  height: 300px;
+}
+
+.main__banner p {
+  padding: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main__cards {
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 8px 13px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img4 img5 img6"
+    "img7 img8 img9";
+}
+
+.main__cards img {
+  width: 450px;
+  height: 350px;
+}
+
+.main__cards p {
+  text-align: center;
+}
+
+.main__cards a {
+  text-decoration: none;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.main .img1 {
+  grid-area: img1;
+  padding: 40px;
+}
+
+.main .img2 {
+  grid-area: img2;
+  padding: 40px;
+}
+
+.main .img3 {
+  grid-area: img3;
+  padding: 40px;
+}
+
+.main .img4 {
+  grid-area: img4;
+  padding: 40px;
+}
+
+.main .img5 {
+  grid-area: img5;
+  padding: 40px;
+}
+
+.main .img6 {
+  grid-area: img6;
+  padding: 40px;
+}
+
+.main .img7 {
+  grid-area: img7;
+  padding: 40px;
+}
+
+.main .img8 {
+  grid-area: img8;
+  padding: 40px;
+}
+
+.main .img9 {
+  grid-area: img9;
+  padding: 40px;
+}
+
+.main__aboutus {
+  font-family: "Bebas Neue", cursive;
+  color: violet;
+  padding: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.main__aboutus h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 80px;
+  text-decoration: underline 5px;
+}
+
+.main__faqs {
+  font-family: "Bebas Neue", cursive;
+  color: violet;
+  padding: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.main__faqs h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 80px;
+  text-decoration: underline 5px;
+}
+
+.main__store {
+  font-family: "Bebas Neue", cursive;
+  color: violet;
+  padding: 40px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.main__store h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 80px;
+  text-decoration: underline 5px;
+}
+
+.main__store p {
+  font-size: 50px;
+  text-decoration: underline;
+  padding-bottom: 30px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.main__sucursalesul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.main__sucursalesul li {
+  font-size: 30px;
+}
+
+@media (max-width: 900px) {
   .main__cards {
-    align-items: center;
-    justify-items: center;
-    align-content: center;
-    justify-content: space-evenly;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 8px 13px;
-    grid-auto-flow: row;
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9"; }
-    .main__cards img {
-      width: 450px;
-      height: 350px; }
-    .main__cards p {
-      text-align: center; }
-    .main__cards a {
-      text-decoration: none;
-      color: violet;
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
-  .main .img1 {
-    grid-area: img1;
-    padding: 40px; }
-  .main .img2 {
-    grid-area: img2;
-    padding: 40px; }
-  .main .img3 {
-    grid-area: img3;
-    padding: 40px; }
-  .main .img4 {
-    grid-area: img4;
-    padding: 40px; }
-  .main .img5 {
-    grid-area: img5;
-    padding: 40px; }
-  .main .img6 {
-    grid-area: img6;
-    padding: 40px; }
-  .main .img7 {
-    grid-area: img7;
-    padding: 40px; }
-  .main .img8 {
-    grid-area: img8;
-    padding: 40px; }
-  .main .img9 {
-    grid-area: img9;
-    padding: 40px; }
-  .main__aboutus {
-    font-family: "Bebas Neue", cursive;
-    color: violet;
-    padding: 40px;
-    margin-left: 300px;
-    margin-right: 300px; }
-    .main__aboutus h3 {
-      text-align: center;
-      padding-bottom: 20px;
-      font-size: 80px;
-      text-decoration: underline 5px; }
-  .main__faqs {
-    font-family: "Bebas Neue", cursive;
-    color: violet;
-    padding: 40px;
-    margin-left: 300px;
-    margin-right: 300px; }
-    .main__faqs h3 {
-      text-align: center;
-      padding-bottom: 20px;
-      font-size: 80px;
-      text-decoration: underline 5px; }
-  .main__store {
-    font-family: "Bebas Neue", cursive;
-    color: violet;
-    padding: 40px;
-    margin-left: 400px;
-    margin-right: 400px; }
-    .main__store h3 {
-      text-align: center;
-      padding-bottom: 20px;
-      font-size: 80px;
-      text-decoration: underline 5px; }
-    .main__store p {
-      font-size: 50px;
-      text-decoration: underline;
-      padding-bottom: 30px;
-      font-family: "Bebas Neue", cursive; }
-  .main__sucursalesul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center; }
-    .main__sucursalesul li {
-      font-size: 30px; }
+  }
+}
 
 .header {
   background: #7603ab;
-  background: linear-gradient(184deg, #7603ab 30%, black 59%); }
-  .header__logo {
-    font-family: "Anton", "Kanit", "Roboto", sans-serif;
-    text-align: center;
-    color: orange;
-    text-decoration: none;
-    padding-bottom: 60px; }
-    .header__logo h1 {
-      font-size: 75px;
-      font-family: "Bebas Neue", cursive; }
-    .header__logo h1:hover {
-      color: aqua;
-      transition: 0.5s;
-      text-decoration: line-through; }
-    .header__logo a {
-      text-decoration: none;
-      color: violet; }
-  .header__ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin-left: 150px;
-    margin-right: 150px; }
-    .header__ul li {
-      list-style: none;
-      text-decoration: none;
-      color: orange; }
-    .header__ul li:hover {
-      text-decoration: underline;
-      transition: 0.5s; }
-    .header__ul a {
-      text-decoration: none;
-      color: violet;
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
+  background: linear-gradient(184deg, #7603ab 30%, black 59%);
+}
+
+.header__logo {
+  font-family: "Anton", "Kanit", "Roboto", sans-serif;
+  text-align: center;
+  color: orange;
+  text-decoration: none;
+  padding-bottom: 60px;
+}
+
+.header__logo h1 {
+  font-size: 75px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.header__logo h1:hover {
+  color: aqua;
+  transition: 0.5s;
+  text-decoration: line-through;
+}
+
+.header__logo a {
+  text-decoration: none;
+  color: violet;
+}
+
+.header__ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.header__ul li {
+  list-style: none;
+  text-decoration: none;
+  color: orange;
+}
+
+.header__ul li:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.header__ul a {
+  text-decoration: none;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
 
 .footer {
   background: #7603ab;
@@ -181,467 +272,1016 @@
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  flex-direction: row; }
-  .footer__redes {
-    display: flex; }
-    .footer__redes img {
-      width: 45px;
-      height: 45px; }
-  .footer__ul li {
-    list-style: none; }
-  .footer__ul a {
-    text-decoration: none;
-    color: rgba(238, 130, 238, 0.524);
-    font-family: "Bebas Neue", cursive; }
+  flex-direction: row;
+}
+
+.footer__redes {
+  display: flex;
+}
+
+.footer__redes img {
+  width: 45px;
+  height: 45px;
+}
+
+.footer__ul li {
+  list-style: none;
+}
+
+.footer__ul a {
+  text-decoration: none;
+  color: rgba(238, 130, 238, 0.524);
+  font-family: "Bebas Neue", cursive;
+}
 
 .sneakers {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
-  .sneakers__titulo {
-    color: violet;
-    text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
-    padding: 40px; }
-    .sneakers__titulo h2 {
-      padding: 20px;
-      font-size: 75px;
-      font-family: "Bebas Neue", cursive; }
-    .sneakers__titulo p {
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
-  .sneakers__tienda {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-areas: "zap1 zap2 zap3 zap4" "zap5 zap6 zap7 zap8" "zap9 zap10 zap11 zap12" "zap13 zap14 zap15 zap16";
-    justify-items: center;
-    align-items: center;
-    justify-content: center; }
-    .sneakers__tienda .zap1 {
-      grid-area: zap1;
-      padding: 50px; }
-    .sneakers__tienda .zap2 {
-      grid-area: zap2;
-      padding: 50px; }
-    .sneakers__tienda .zap3 {
-      grid-area: zap3;
-      padding: 50px; }
-    .sneakers__tienda .zap4 {
-      grid-area: zap4;
-      padding: 50px; }
-    .sneakers__tienda .zap5 {
-      grid-area: zap5;
-      padding: 50px; }
-    .sneakers__tienda .zap6 {
-      grid-area: zap6;
-      padding: 50px; }
-    .sneakers__tienda .zap7 {
-      grid-area: zap7;
-      padding: 50px; }
-    .sneakers__tienda .zap8 {
-      grid-area: zap8;
-      padding: 50px; }
-    .sneakers__tienda .zap9 {
-      grid-area: zap9;
-      padding: 50px; }
-    .sneakers__tienda .zap10 {
-      grid-area: zap10;
-      padding: 50px; }
-    .sneakers__tienda .zap11 {
-      grid-area: zap11;
-      padding: 50px; }
-    .sneakers__tienda .zap12 {
-      grid-area: zap12;
-      padding: 50px; }
-    .sneakers__tienda .zap13 {
-      grid-area: zap13;
-      padding: 50px; }
-    .sneakers__tienda .zap14 {
-      grid-area: zap14;
-      padding: 50px; }
-    .sneakers__tienda .zap15 {
-      grid-area: zap15;
-      padding: 50px; }
-    .sneakers__tienda .zap16 {
-      grid-area: zap16;
-      padding: 50px; }
-    .sneakers__tienda img {
-      width: 350px;
-      height: 350px; }
-    .sneakers__tienda p {
-      padding-top: 20px;
-      text-align: center; }
-    .sneakers__tienda a {
-      text-decoration: none;
-      color: violet; }
-    .sneakers__tienda a:hover {
-      text-decoration: underline;
-      transition: 0.5s; }
-  .sneakers__baner {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    padding: 50px; }
-    .sneakers__baner img {
-      height: 350px;
-      width: 650px; }
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+}
+
+.sneakers__titulo {
+  color: violet;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: 40px;
+}
+
+.sneakers__titulo h2 {
+  padding: 20px;
+  font-size: 75px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.sneakers__titulo p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.sneakers__tienda {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "zap1 zap2 zap3 zap4"
+    "zap5 zap6 zap7 zap8"
+    "zap9 zap10 zap11 zap12"
+    "zap13 zap14 zap15 zap16";
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.sneakers__tienda .zap1 {
+  grid-area: zap1;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap2 {
+  grid-area: zap2;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap3 {
+  grid-area: zap3;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap4 {
+  grid-area: zap4;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap5 {
+  grid-area: zap5;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap6 {
+  grid-area: zap6;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap7 {
+  grid-area: zap7;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap8 {
+  grid-area: zap8;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap9 {
+  grid-area: zap9;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap10 {
+  grid-area: zap10;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap11 {
+  grid-area: zap11;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap12 {
+  grid-area: zap12;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap13 {
+  grid-area: zap13;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap14 {
+  grid-area: zap14;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap15 {
+  grid-area: zap15;
+  padding: 50px;
+}
+
+.sneakers__tienda .zap16 {
+  grid-area: zap16;
+  padding: 50px;
+}
+
+.sneakers__tienda img {
+  width: 350px;
+  height: 350px;
+}
+
+.sneakers__tienda p {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sneakers__tienda a {
+  text-decoration: none;
+  color: violet;
+}
+
+.sneakers__tienda a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.sneakers__baner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  padding: 50px;
+}
+
+.sneakers__baner img {
+  height: 350px;
+  width: 650px;
+}
 
 .abrigos {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
-  .abrigos__shop {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas: "ab1 ab2 ab3 ab4" "ab5 ab6 ab7 ab8";
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    align-content: center;
-    padding: 60px; }
-    .abrigos__shop img {
-      width: 300px;
-      height: 300px; }
-    .abrigos__shop p {
-      color: violet;
-      text-align: center;
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
-  .abrigos .ab1 {
-    grid-area: ab1;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab2 {
-    grid-area: ab2;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab3 {
-    grid-area: ab3;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab4 {
-    grid-area: ab4;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab5 {
-    grid-area: ab5;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab6 {
-    grid-area: ab6;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab7 {
-    grid-area: ab7;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos .ab8 {
-    grid-area: ab8;
-    padding: 40px;
-    padding-bottom: 100px; }
-  .abrigos__title {
-    color: violet;
-    text-align: center;
-    padding: 60px; }
-    .abrigos__title h2 {
-      padding: 20px;
-      font-size: 75px;
-      font-family: "Bebas Neue", cursive; }
-    .abrigos__title p {
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+}
+
+.abrigos__shop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "ab1 ab2 ab3 ab4"
+    "ab5 ab6 ab7 ab8";
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 60px;
+}
+
+.abrigos__shop img {
+  width: 300px;
+  height: 300px;
+}
+
+.abrigos__shop p {
+  color: violet;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.abrigos .ab1 {
+  grid-area: ab1;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab2 {
+  grid-area: ab2;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab3 {
+  grid-area: ab3;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab4 {
+  grid-area: ab4;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab5 {
+  grid-area: ab5;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab6 {
+  grid-area: ab6;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab7 {
+  grid-area: ab7;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos .ab8 {
+  grid-area: ab8;
+  padding: 40px;
+  padding-bottom: 100px;
+}
+
+.abrigos__title {
+  color: violet;
+  text-align: center;
+  padding: 60px;
+}
+
+.abrigos__title h2 {
+  padding: 20px;
+  font-size: 75px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.abrigos__title p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
 
 .remeras {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
-  .remeras__titulo {
-    color: #b005b0;
-    text-align: center;
-    font-family: "Bebas Neue", cursive;
-    padding-left: 350px;
-    padding-right: 350px;
-    padding-top: 80px;
-    padding-bottom: 100px; }
-    .remeras__titulo h2 {
-      font-size: 60px;
-      text-decoration: underline; }
-    .remeras__titulo p {
-      font-size: 30px; }
-  .remeras__banner {
-    text-align: center;
-    padding-bottom: 50px; }
-    .remeras__banner img {
-      width: 1000px;
-      height: 350px; }
-    .remeras__banner p {
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
-  .remeras__tienda {
-    color: violet;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas: "rem1 rem2 rem3" "rem4 rem5 rem6" "rem7 rem8 rem9";
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    justify-content: center; }
-    .remeras__tienda img {
-      width: 350px;
-      height: 350px; }
-    .remeras__tienda p {
-      text-align: center;
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px;
-      text-decoration: underline; }
-  .remeras .rem1 {
-    grid-area: rem1;
-    padding: 70px; }
-  .remeras .rem2 {
-    grid-area: rem2; }
-  .remeras .rem3 {
-    grid-area: rem3; }
-  .remeras .rem4 {
-    grid-area: rem4; }
-  .remeras .rem5 {
-    grid-area: rem5; }
-  .remeras .rem6 {
-    grid-area: rem6; }
-  .remeras .rem7 {
-    grid-area: rem7; }
-  .remeras .rem8 {
-    grid-area: rem8; }
-  .remeras .rem9 {
-    grid-area: rem9; }
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+}
+
+.remeras__titulo {
+  color: #b005b0;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.remeras__titulo h2 {
+  font-size: 60px;
+  text-decoration: underline;
+}
+
+.remeras__titulo p {
+  font-size: 30px;
+}
+
+.remeras__banner {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.remeras__banner img {
+  width: 1000px;
+  height: 350px;
+}
+
+.remeras__banner p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.remeras__tienda {
+  color: violet;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "rem1 rem2 rem3"
+    "rem4 rem5 rem6"
+    "rem7 rem8 rem9";
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.remeras__tienda img {
+  width: 350px;
+  height: 350px;
+}
+
+.remeras__tienda p {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.remeras .rem1 {
+  grid-area: rem1;
+  padding: 70px;
+}
+
+.remeras .rem2 {
+  grid-area: rem2;
+}
+
+.remeras .rem3 {
+  grid-area: rem3;
+}
+
+.remeras .rem4 {
+  grid-area: rem4;
+}
+
+.remeras .rem5 {
+  grid-area: rem5;
+}
+
+.remeras .rem6 {
+  grid-area: rem6;
+}
+
+.remeras .rem7 {
+  grid-area: rem7;
+}
+
+.remeras .rem8 {
+  grid-area: rem8;
+}
+
+.remeras .rem9 {
+  grid-area: rem9;
+}
 
 .camperas {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
-  .camperas__titulo {
-    color: violet;
-    text-align: center;
-    font-family: "Bebas Neue", cursive;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 300px;
-    margin-right: 300px; }
-    .camperas__titulo h2 {
-      font-size: 75px; }
-    .camperas__titulo p {
-      font-size: 30px; }
-  .camperas__banner {
-    text-align: center;
-    padding-bottom: 80px;
-    color: violet;
-    font-family: "Bebas Neue", cursive;
-    font-size: 30px; }
-    .camperas__banner img {
-      width: 1000px;
-      height: 350px; }
-    .camperas__banner p {
-      margin-left: 400px;
-      margin-right: 400px; }
-  .camperas__tienda {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "cam1 cam2 cam3" "cam4 cam5 cam6" "cam7 cam8 cam9";
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center; }
-    .camperas__tienda img {
-      width: 350px;
-      height: 350px; }
-    .camperas__tienda p {
-      text-align: center;
-      color: violet;
-      font-family: "Bebas Neue", cursive;
-      font-size: 20px; }
-  .camperas .cam1 {
-    grid-area: cam1;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam2 {
-    grid-area: cam2;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam3 {
-    grid-area: cam3;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam4 {
-    grid-area: cam4;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam5 {
-    grid-area: cam5;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam6 {
-    grid-area: cam6;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam7 {
-    grid-area: cam7;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam8 {
-    grid-area: cam8;
-    padding-top: 50px;
-    padding-bottom: 100px; }
-  .camperas .cam9 {
-    grid-area: cam9;
-    padding-top: 50px;
-    padding-bottom: 100px; }
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+}
+
+.camperas__titulo {
+  color: violet;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+.camperas__titulo h2 {
+  font-size: 75px;
+}
+
+.camperas__titulo p {
+  font-size: 30px;
+}
+
+.camperas__banner {
+  text-align: center;
+  padding-bottom: 80px;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.camperas__banner img {
+  width: 1000px;
+  height: 350px;
+}
+
+.camperas__banner p {
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+.camperas__tienda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "cam1 cam2 cam3"
+    "cam4 cam5 cam6"
+    "cam7 cam8 cam9";
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.camperas__tienda img {
+  width: 350px;
+  height: 350px;
+}
+
+.camperas__tienda p {
+  text-align: center;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+}
+
+.camperas .cam1 {
+  grid-area: cam1;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam2 {
+  grid-area: cam2;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam3 {
+  grid-area: cam3;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam4 {
+  grid-area: cam4;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam5 {
+  grid-area: cam5;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam6 {
+  grid-area: cam6;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam7 {
+  grid-area: cam7;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam8 {
+  grid-area: cam8;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.camperas .cam9 {
+  grid-area: cam9;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 
 .pantalones {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%);
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
   color: violet;
-  font-family: "Bebas Neue", cursive; }
-  .pantalones__titulo {
-    padding: 60px;
-    margin-left: 300px;
-    margin-right: 300px;
-    text-align: center; }
-    .pantalones__titulo h2 {
-      padding: 20px;
-      font-size: 75px;
-      font-family: "Bebas Neue", cursive; }
-    .pantalones__titulo p {
-      font-family: "Bebas Neue", cursive;
-      font-size: 30px; }
-  .pantalones__banner {
-    padding: 70px;
-    text-align: center; }
-    .pantalones__banner img {
-      width: 1000px;
-      height: 350px; }
-  .pantalones__tienda {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "pant1 pant2 pant3" "pant4 pant5 pant6" "pant7 pant8 pant9"; }
-    .pantalones__tienda img {
-      width: 350px;
-      height: 350px; }
-    .pantalones__tienda p {
-      font-size: 30px; }
-  .pantalones .pant1 {
-    grid-area: pant1; }
-  .pantalones .pant2 {
-    grid-area: pant2; }
-  .pantalones .pant3 {
-    grid-area: pant3; }
-  .pantalones .pant4 {
-    grid-area: pant4; }
-  .pantalones .pant5 {
-    grid-area: pant5; }
-  .pantalones .pant6 {
-    grid-area: pant6; }
-  .pantalones .pant7 {
-    grid-area: pant7; }
-  .pantalones .pant8 {
-    grid-area: pant8; }
-  .pantalones .pant9 {
-    grid-area: pant9; }
+  font-family: "Bebas Neue", cursive;
+}
+
+.pantalones__titulo {
+  padding: 60px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+}
+
+.pantalones__titulo h2 {
+  padding: 20px;
+  font-size: 75px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.pantalones__titulo p {
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+}
+
+.pantalones__banner {
+  padding: 70px;
+  text-align: center;
+}
+
+.pantalones__banner img {
+  width: 1000px;
+  height: 350px;
+}
+
+.pantalones__tienda {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "pant1 pant2 pant3"
+    "pant4 pant5 pant6"
+    "pant7 pant8 pant9";
+}
+
+.pantalones__tienda img {
+  width: 350px;
+  height: 350px;
+}
+
+.pantalones__tienda p {
+  font-size: 30px;
+}
+
+.pantalones .pant1 {
+  grid-area: pant1;
+}
+
+.pantalones .pant2 {
+  grid-area: pant2;
+}
+
+.pantalones .pant3 {
+  grid-area: pant3;
+}
+
+.pantalones .pant4 {
+  grid-area: pant4;
+}
+
+.pantalones .pant5 {
+  grid-area: pant5;
+}
+
+.pantalones .pant6 {
+  grid-area: pant6;
+}
+
+.pantalones .pant7 {
+  grid-area: pant7;
+}
+
+.pantalones .pant8 {
+  grid-area: pant8;
+}
+
+.pantalones .pant9 {
+  grid-area: pant9;
+}
 
 .sale {
   background: black;
-  background: linear-gradient(340deg, black 18%, #7603ab 38%, #7f00b9 69%, black 86%); }
-  .sale__titulo {
-    color: violet;
+  background: linear-gradient(
+    340deg,
+    black 18%,
+    #7603ab 38%,
+    #7f00b9 69%,
+    black 86%
+  );
+}
+
+.sale__titulo {
+  color: violet;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-decoration: underline;
+}
+
+.sale__titulo h2 {
+  font-size: 75px;
+}
+
+.sale__banner {
+  text-align: center;
+  color: violet;
+  font-family: "Bebas Neue", cursive;
+  padding-bottom: 100px;
+}
+
+.sale__banner img {
+  width: 1000px;
+  height: 350px;
+}
+
+.sale__banner p {
+  font-size: 30px;
+}
+
+.sale__tienda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sal1 sal2 sal3"
+    "sal4 sal5 sal6"
+    "sal7 sal8 sal9";
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.sale__tienda img {
+  width: 350px;
+  height: 350px;
+}
+
+.sale__tienda p {
+  font-family: "Bebas Neue", cursive;
+  color: violet;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sale__tienda p:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.sale .sal1 {
+  grid-area: sal1;
+  padding-bottom: 70px;
+}
+
+.sale .sal2 {
+  grid-area: sal2;
+  padding-bottom: 70px;
+}
+
+.sale .sal3 {
+  grid-area: sal3;
+  padding-bottom: 70px;
+}
+
+.sale .sal4 {
+  grid-area: sal4;
+  padding-bottom: 70px;
+}
+
+.sale .sal5 {
+  grid-area: sal5;
+  padding-bottom: 70px;
+}
+
+.sale .sal6 {
+  grid-area: sal6;
+  padding-bottom: 70px;
+}
+
+.sale .sal7 {
+  grid-area: sal7;
+  padding-bottom: 70px;
+}
+
+.sale .sal8 {
+  grid-area: sal8;
+  padding-bottom: 70px;
+}
+
+.sale .sal9 {
+  grid-area: sal9;
+  padding-bottom: 70px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px) {
+  .main__logo {
+    font-size: 30px;
+    padding: 0;
+  }
+  .main__logo p {
+    font-size: 15px;
     text-align: center;
-    font-family: "Bebas Neue", cursive;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 300px;
-    margin-right: 300px;
-    text-decoration: underline; }
-    .sale__titulo h2 {
-      font-size: 75px; }
-  .sale__banner {
+    margin: 0;
+  }
+  .main__banner {
+    padding: 30px;
+  }
+  .main__banner p {
+    margin: 0;
+  }
+  .main__cards {
+    display: flex;
     text-align: center;
-    color: violet;
-    font-family: "Bebas Neue", cursive;
-    padding-bottom: 100px; }
-    .sale__banner img {
-      width: 1000px;
-      height: 350px; }
-    .sale__banner p {
-      font-size: 30px; }
-  .sale__tienda {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "sal1 sal2 sal3" "sal4 sal5 sal6" "sal7 sal8 sal9";
-    justify-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .main__cards img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .main__cards p {
+    font-size: 10px;
+  }
+  .main__store {
+    margin: 0;
+  }
+  .abrigos__shop {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center; }
-    .sale__tienda img {
-      width: 350px;
-      height: 350px; }
-    .sale__tienda p {
-      font-family: "Bebas Neue", cursive;
-      color: violet;
-      font-size: 30px;
-      text-align: center; }
-    .sale__tienda p:hover {
-      text-decoration: underline;
-      transition: 0.5s; }
-  .sale .sal1 {
-    grid-area: sal1;
-    padding-bottom: 70px; }
-  .sale .sal2 {
-    grid-area: sal2;
-    padding-bottom: 70px; }
-  .sale .sal3 {
-    grid-area: sal3;
-    padding-bottom: 70px; }
-  .sale .sal4 {
-    grid-area: sal4;
-    padding-bottom: 70px; }
-  .sale .sal5 {
-    grid-area: sal5;
-    padding-bottom: 70px; }
-  .sale .sal6 {
-    grid-area: sal6;
-    padding-bottom: 70px; }
-  .sale .sal7 {
-    grid-area: sal7;
-    padding-bottom: 70px; }
-  .sale .sal8 {
-    grid-area: sal8;
-    padding-bottom: 70px; }
-  .sale .sal9 {
-    grid-area: sal9;
-    padding-bottom: 70px; }
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+  .abrigos__shop img {
+    width: 250px;
+    height: 250px;
+  }
+  .abrigos__title h2 {
+    font-size: 40px;
+  }
+  .abrigos__title p {
+    font-size: 15px;
+  }
+  .remeras__titulo {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .remeras__titulo p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .remeras__banner {
+    padding: 30px;
+  }
+  .remeras__banner img {
+    width: 800px;
+    height: 200px;
+  }
+  .remeras__banner p {
+    margin: 0;
+  }
+  .remeras__tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .remeras__tienda img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .remeras__tienda p {
+    font-size: 10px;
+  }
+  .camperas__titulo {
+    font-size: 30px;
+    padding: 0;
+  }
+  .camperas__titulo p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .camperas__banner {
+    padding: 30px;
+  }
+  .camperas__banner img {
+    width: 800px;
+    height: 200px;
+  }
+  .camperas__banner p {
+    margin: 0;
+  }
+  .camperas__tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .camperas__tienda img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .camperas__tienda p {
+    font-size: 20px;
+  }
+  .pantalones__titulo {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .pantalones__titulo p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .pantalones__banner {
+    padding: 30px;
+    margin: 0;
+  }
+  .pantalones__banner img {
+    width: 800px;
+    height: 200px;
+  }
+  .pantalones__banner p {
+    margin: 0;
+  }
+  .pantalones__tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .pantalones__tienda img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .pantalones__tienda p {
+    font-size: 20px;
+  }
+  .sneakers__titulo {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .sneakers__titulo p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .sneakers__baner {
+    padding: 30px;
+    margin: 0;
+  }
+  .sneakers__baner img {
+    width: 800px;
+    height: 200px;
+  }
+  .sneakers__baner p {
+    margin: 0;
+  }
+  .sneakers__tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .sneakers__tienda img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sneakers__tienda p {
+    font-size: 20px;
+  }
+  .sale__titulo {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  .sale__titulo p {
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+  }
+  .sale__banner {
+    padding: 30px;
+    margin: 0;
+  }
+  .sale__banner img {
+    width: 800px;
+    height: 200px;
+  }
+  .sale__banner p {
+    margin: 0;
+  }
+  .sale__tienda {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 5px yellow solid;
+  }
+
+  .sale__tienda img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .sale__tienda p {
+    font-size: 20px;
+  }
+}
