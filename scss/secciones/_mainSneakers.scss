@@ -30,6 +30,10 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
+    img{
+      width: 350px;
+      height: 350px;
+    }
 
   .zap1 {
     grid-area: zap1;
@@ -161,6 +165,7 @@
         width: 650px;
     }
   }
+}
   @media (max-width:1600px){
     .sneakers {
       background-color: $colorFondo;
@@ -294,8 +299,8 @@
         padding: 50px;
       }
       img {
-        width: 250px;
-        height: 250px;
+        width: 350px;
+        height: 350px;
       }
       p {
         padding-top: 20px;
@@ -360,6 +365,10 @@
       justify-items: center;
       align-items: center;
       justify-content: center;
+      img{
+        width: 250px;
+        height: 250px;
+      }
   
     .zap1 {
       grid-area: zap1;
@@ -506,5 +515,5 @@
 }
 }
 }
-}
+
 

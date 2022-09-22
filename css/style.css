@@ -499,6 +499,9 @@
     justify-items: center;
     align-items: center;
     justify-content: center; }
+    .sneakers__tienda img {
+      width: 350px;
+      height: 350px; }
     .sneakers__tienda .zap1 {
       grid-area: zap1;
       padding: 50px; }
@@ -570,209 +573,215 @@
     .sneakers__baner img {
       height: 350px;
       width: 650px; }
-  @media (max-width: 1600px) {
-    .sneakers .sneakers {
-      background-color: #5E503F; }
-      .sneakers .sneakers__titulo {
-        color: #100A04;
-        text-align: center;
-        margin-left: 250px;
-        margin-right: 250px;
-        padding: 40px; }
-        .sneakers .sneakers__titulo h2 {
-          padding: 20px;
-          font-size: 75px;
-          font-family: "Bebas Neue", cursive; }
-        .sneakers .sneakers__titulo p {
-          font-family: "Bebas Neue", cursive;
-          font-size: 30px; }
-      .sneakers .sneakers__tienda {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: "zap1 zap2 zap3 zap4" "zap5 zap6 zap7 zap8" "zap9 zap10 zap11 zap12" "zap13 zap14 zap15 zap16";
-        justify-items: center;
-        align-items: center;
-        justify-content: center; }
-        .sneakers .sneakers__tienda .zap1 {
-          grid-area: zap1;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap2 {
-          grid-area: zap2;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap3 {
-          grid-area: zap3;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap4 {
-          grid-area: zap4;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap5 {
-          grid-area: zap5;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap6 {
-          grid-area: zap6;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap7 {
-          grid-area: zap7;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap8 {
-          grid-area: zap8;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap9 {
-          grid-area: zap9;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap10 {
-          grid-area: zap10;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap11 {
-          grid-area: zap11;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap12 {
-          grid-area: zap12;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap13 {
-          grid-area: zap13;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap14 {
-          grid-area: zap14;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap15 {
-          grid-area: zap15;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap16 {
-          grid-area: zap16;
-          padding: 50px; }
-        .sneakers .sneakers__tienda img {
-          width: 250px;
-          height: 250px; }
-        .sneakers .sneakers__tienda p {
-          padding-top: 20px;
-          text-align: center; }
-        .sneakers .sneakers__tienda a {
-          text-decoration: none;
-          color: #100A04; }
-        .sneakers .sneakers__tienda a:hover {
-          text-decoration: underline;
-          transition: 0.5s; }
-      .sneakers .sneakers__baner {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+
+@media (max-width: 1600px) {
+  .sneakers {
+    background-color: #5E503F; }
+    .sneakers__titulo {
+      color: #100A04;
+      text-align: center;
+      margin-left: 250px;
+      margin-right: 250px;
+      padding: 40px; }
+      .sneakers__titulo h2 {
+        padding: 20px;
+        font-size: 75px;
+        font-family: "Bebas Neue", cursive; }
+      .sneakers__titulo p {
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px; }
+    .sneakers__tienda {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "zap1 zap2 zap3 zap4" "zap5 zap6 zap7 zap8" "zap9 zap10 zap11 zap12" "zap13 zap14 zap15 zap16";
+      justify-items: center;
+      align-items: center;
+      justify-content: center; }
+      .sneakers__tienda .zap1 {
+        grid-area: zap1;
         padding: 50px; }
-        .sneakers .sneakers__baner img {
-          height: 350px;
-          width: 650px; } }
-  @media (min-width: 901px) {
-    .sneakers .sneakers {
-      background-color: #5E503F; }
-      .sneakers .sneakers__titulo {
-        color: #100A04;
-        text-align: center;
-        margin-left: 250px;
-        margin-right: 250px;
-        padding: 40px; }
-        .sneakers .sneakers__titulo h2 {
-          padding: 20px;
-          font-size: 75px;
-          font-family: "Bebas Neue", cursive; }
-        .sneakers .sneakers__titulo p {
-          font-family: "Bebas Neue", cursive;
-          font-size: 30px; }
-      .sneakers .sneakers__tienda {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-auto-rows: 1fr;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: "zap1 zap2 zap3 zap4" "zap5 zap6 zap7 zap8" "zap9 zap10 zap11 zap12" "zap13 zap14 zap15 zap16";
-        justify-items: center;
-        align-items: center;
-        justify-content: center; }
-        .sneakers .sneakers__tienda .zap1 {
-          grid-area: zap1;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap2 {
-          grid-area: zap2;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap3 {
-          grid-area: zap3;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap4 {
-          grid-area: zap4;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap5 {
-          grid-area: zap5;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap6 {
-          grid-area: zap6;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap7 {
-          grid-area: zap7;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap8 {
-          grid-area: zap8;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap9 {
-          grid-area: zap9;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap10 {
-          grid-area: zap10;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap11 {
-          grid-area: zap11;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap12 {
-          grid-area: zap12;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap13 {
-          grid-area: zap13;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap14 {
-          grid-area: zap14;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap15 {
-          grid-area: zap15;
-          padding: 50px; }
-        .sneakers .sneakers__tienda .zap16 {
-          grid-area: zap16;
-          padding: 50px; }
-        .sneakers .sneakers__tienda img {
-          width: 150px;
-          height: 150px; }
-        .sneakers .sneakers__tienda p {
-          padding-top: 20px;
-          text-align: center; }
-        .sneakers .sneakers__tienda a {
-          text-decoration: none;
-          color: #100A04; }
-        .sneakers .sneakers__tienda a:hover {
-          text-decoration: underline;
-          transition: 0.5s; }
-      .sneakers .sneakers__baner {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: center;
-        align-content: center;
+      .sneakers__tienda .zap2 {
+        grid-area: zap2;
         padding: 50px; }
-        .sneakers .sneakers__baner img {
-          height: 350px;
-          width: 650px; } }
-  @media (max-width: 900px) {
-    .sneakers .sneakers__tienda {
+      .sneakers__tienda .zap3 {
+        grid-area: zap3;
+        padding: 50px; }
+      .sneakers__tienda .zap4 {
+        grid-area: zap4;
+        padding: 50px; }
+      .sneakers__tienda .zap5 {
+        grid-area: zap5;
+        padding: 50px; }
+      .sneakers__tienda .zap6 {
+        grid-area: zap6;
+        padding: 50px; }
+      .sneakers__tienda .zap7 {
+        grid-area: zap7;
+        padding: 50px; }
+      .sneakers__tienda .zap8 {
+        grid-area: zap8;
+        padding: 50px; }
+      .sneakers__tienda .zap9 {
+        grid-area: zap9;
+        padding: 50px; }
+      .sneakers__tienda .zap10 {
+        grid-area: zap10;
+        padding: 50px; }
+      .sneakers__tienda .zap11 {
+        grid-area: zap11;
+        padding: 50px; }
+      .sneakers__tienda .zap12 {
+        grid-area: zap12;
+        padding: 50px; }
+      .sneakers__tienda .zap13 {
+        grid-area: zap13;
+        padding: 50px; }
+      .sneakers__tienda .zap14 {
+        grid-area: zap14;
+        padding: 50px; }
+      .sneakers__tienda .zap15 {
+        grid-area: zap15;
+        padding: 50px; }
+      .sneakers__tienda .zap16 {
+        grid-area: zap16;
+        padding: 50px; }
+      .sneakers__tienda img {
+        width: 350px;
+        height: 350px; }
+      .sneakers__tienda p {
+        padding-top: 20px;
+        text-align: center; }
+      .sneakers__tienda a {
+        text-decoration: none;
+        color: #100A04; }
+      .sneakers__tienda a:hover {
+        text-decoration: underline;
+        transition: 0.5s; }
+    .sneakers__baner {
       display: flex;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-content: center;
       justify-content: center;
-      align-items: center; } }
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      padding: 50px; }
+      .sneakers__baner img {
+        height: 350px;
+        width: 650px; } }
+
+@media (min-width: 901px) {
+  .sneakers {
+    background-color: #5E503F; }
+    .sneakers__titulo {
+      color: #100A04;
+      text-align: center;
+      margin-left: 250px;
+      margin-right: 250px;
+      padding: 40px; }
+      .sneakers__titulo h2 {
+        padding: 20px;
+        font-size: 75px;
+        font-family: "Bebas Neue", cursive; }
+      .sneakers__titulo p {
+        font-family: "Bebas Neue", cursive;
+        font-size: 30px; }
+    .sneakers__tienda {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-auto-rows: 1fr;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "zap1 zap2 zap3 zap4" "zap5 zap6 zap7 zap8" "zap9 zap10 zap11 zap12" "zap13 zap14 zap15 zap16";
+      justify-items: center;
+      align-items: center;
+      justify-content: center; }
+      .sneakers__tienda img {
+        width: 250px;
+        height: 250px; }
+      .sneakers__tienda .zap1 {
+        grid-area: zap1;
+        padding: 50px; }
+      .sneakers__tienda .zap2 {
+        grid-area: zap2;
+        padding: 50px; }
+      .sneakers__tienda .zap3 {
+        grid-area: zap3;
+        padding: 50px; }
+      .sneakers__tienda .zap4 {
+        grid-area: zap4;
+        padding: 50px; }
+      .sneakers__tienda .zap5 {
+        grid-area: zap5;
+        padding: 50px; }
+      .sneakers__tienda .zap6 {
+        grid-area: zap6;
+        padding: 50px; }
+      .sneakers__tienda .zap7 {
+        grid-area: zap7;
+        padding: 50px; }
+      .sneakers__tienda .zap8 {
+        grid-area: zap8;
+        padding: 50px; }
+      .sneakers__tienda .zap9 {
+        grid-area: zap9;
+        padding: 50px; }
+      .sneakers__tienda .zap10 {
+        grid-area: zap10;
+        padding: 50px; }
+      .sneakers__tienda .zap11 {
+        grid-area: zap11;
+        padding: 50px; }
+      .sneakers__tienda .zap12 {
+        grid-area: zap12;
+        padding: 50px; }
+      .sneakers__tienda .zap13 {
+        grid-area: zap13;
+        padding: 50px; }
+      .sneakers__tienda .zap14 {
+        grid-area: zap14;
+        padding: 50px; }
+      .sneakers__tienda .zap15 {
+        grid-area: zap15;
+        padding: 50px; }
+      .sneakers__tienda .zap16 {
+        grid-area: zap16;
+        padding: 50px; }
+      .sneakers__tienda img {
+        width: 150px;
+        height: 150px; }
+      .sneakers__tienda p {
+        padding-top: 20px;
+        text-align: center; }
+      .sneakers__tienda a {
+        text-decoration: none;
+        color: #100A04; }
+      .sneakers__tienda a:hover {
+        text-decoration: underline;
+        transition: 0.5s; }
+    .sneakers__baner {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      padding: 50px; }
+      .sneakers__baner img {
+        height: 350px;
+        width: 650px; } }
+
+@media (max-width: 900px) {
+  .sneakers__tienda {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center; } }
 
 .abrigos {
   background-color: #5E503F; }
