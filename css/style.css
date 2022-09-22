@@ -260,7 +260,7 @@
       .main__sucursalesul li {
         font-size: 30px; } }
 
-@media (max-width: 1500px) {
+@media (max-width: 1599px) {
   .main {
     background-color: #5E503F;
     color: azure; }
@@ -297,8 +297,8 @@
       grid-auto-flow: row;
       grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 img8 img9"; }
       .main__cards img {
-        width: 100px;
-        height: 100px; }
+        width: 250px;
+        height: 250px; }
       .main__cards p {
         text-align: center; }
       .main__cards a {
@@ -388,6 +388,9 @@
     margin: 0px;
     padding: 0px;
     font-size: 30px; }
+  .main__banner img {
+    width: 700px;
+    height: 350px; }
   .main__cards {
     display: flex;
     flex-direction: column;
