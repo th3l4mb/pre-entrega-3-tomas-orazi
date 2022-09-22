@@ -471,7 +471,7 @@
     list-style: none; }
   .footer__ul a {
     text-decoration: none;
-    color: rgba(238, 130, 238, 0.524);
+    color: #100A04;
     font-family: "Bebas Neue", cursive; }
 
 .sneakers {
@@ -1197,3 +1197,35 @@
     padding-left: 0px;
     padding-right: 0px;
     font-family: "Bebas Neue", cursive; } }
+
+.contacto {
+  background-color: #5E503F;
+  color: #100A04;
+  font-family: "Bebas Neue", cursive;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .contacto__form {
+    margin-left: 700px;
+    margin-right: 700px;
+    padding: 100px;
+    border: 5px solid red;
+    background-color: #EAE0D5; }
+
+@media (max-width: 1000px) {
+  .contacto {
+    background-color: #5E503F;
+    color: #100A04;
+    font-family: "Bebas Neue", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row; }
+    .contacto__form {
+      border: 5px solid red;
+      background-color: #EAE0D5; } }
