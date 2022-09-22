@@ -515,5 +515,29 @@
 }
 }
 }
+@media (max-width:425px){
+  .sneakers {
+    &__titulo { 
+      margin: 0px;
+      padding: 0px;
+
+    }
+    &__tienda { 
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+    }
+}
 
 

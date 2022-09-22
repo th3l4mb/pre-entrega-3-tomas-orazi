@@ -33,3 +33,27 @@
   }
  
 }
+@media (max-width:750px){
+  .formulario{
+    margin: 0px;
+   &__form{
+       margin: 0px;
+       padding: 0px;
+       padding-bottom: 150px;
+    background-color:$colorFooter;
+    border: none;
+   }
+}
+}
+@media (max-width: 450px){
+  .formulario{
+       margin: 0px;
+      &__form{
+          margin: 0px;
+          padding: 0px;
+          padding-bottom: 150px;
+       background-color:$colorFooter;
+       border: none;
+      }
+  }
+}

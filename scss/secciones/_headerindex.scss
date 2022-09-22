@@ -65,3 +65,18 @@ margin-right: 150px;
     }
   }
 }
+@media (max-width:425px) {
+  .header {
+    &__nav{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      a{
+        font-size: 15px;
+      }
+    }
+  }
+}

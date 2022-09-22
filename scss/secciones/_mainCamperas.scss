@@ -98,6 +98,10 @@ font-size: 75px;
 }
 @media (max-width:1050px){
   .camperas { 
+    &__titulo{
+      margin: 0px;
+      padding: 0px;
+    }
     &__banner {
       img{
         width: 600px;
@@ -117,5 +121,31 @@ font-size: 75px;
       }
   }
     }
+  }
+  @media (max-width:750px){
+    .camperas{
+      &__titulo{
+        margin: 0px;
+        padding: 0px;
+
+      }
+      &__banner{
+        img{
+          height: 150px;
+          width: 350px;
+        }
+      }
+    }
+  }
+  @media (max-width:330px){
+    .camperas{
+       &__banner{
+      img{
+        height: 150px;
+        width: 300px;
+      }
+    }
+    }
+   
   }
 
