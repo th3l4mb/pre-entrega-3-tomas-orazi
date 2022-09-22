@@ -1,6 +1,5 @@
 .camperas {
-    background: rgb(0,0,0);
-background: linear-gradient(340deg, rgba(0,0,0,1) 18%, rgba(118,3,171,1) 38%, rgba(127,0,185,1) 69%, rgba(0,0,0,1) 86%);
+  background-color: $colorFondo;
 &__titulo{
     color:$colorletras;
     text-align: center;
@@ -97,3 +96,26 @@ font-size: 75px;
         padding-bottom: 100px; }
       
 }
+@media (max-width:1050px){
+  .camperas { 
+    &__banner {
+      img{
+        width: 600px;
+        height: 300px;
+      }
+    }
+    &__tienda {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      img{
+        height: 250px;
+        width: 250px;
+      }
+  }
+    }
+  }
+

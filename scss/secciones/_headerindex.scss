@@ -1,6 +1,21 @@
 .header {
-  background: rgb(118,3,171);
-  background: linear-gradient(184deg, rgba(118,3,171,1) 30%, rgba(0,0,0,1) 59%);
+ background-color: $colorHeader;
+  &__registro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: $typoPrincipal;
+    a{
+      text-decoration: none;
+      color: $colorletras;
+    }
+    a:hover{
+      text-decoration: underline;
+      color: $colorletras;
+    }
+  }
 
   &__logo {
     font-family: $typoPrincipal;
@@ -15,7 +30,8 @@
     h1:hover {
       color: aqua;
       transition: 0.5s;
-      text-decoration: line-through;
+      text-decoration: solid;
+      color: violet;
     }
     a{
       text-decoration: none;
